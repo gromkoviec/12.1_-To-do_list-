@@ -2,6 +2,23 @@ var list = document.querySelector('ul'); // odnosi sie do sekcji <ul>
 var input = document.querySelector('input'); // odnosi sie do sekcji <input type="text" name="item" id="item">
 var button = document.querySelector('button'); // <button>
 
+var listCount = document.getElementById('list').childElementCount;
+var empt = document.getElementById('empt');
+if (listCount > 0){	
+empt.style.display = 'none';  
+}
+
+
+/*
+var liast2 = document.createElement('span');
+listCount.appendChild(liast2);
+liast2.textContent = 'test';
+*/
+
+
+
+
+
       button.onclick = function() {
 var myItem = input.value;
         input.value = '';
@@ -128,3 +145,7 @@ listBtn5.onclick = function() {  // DECLINE
 } // EDIT
 input.focus(); // przekierowanie na okno dodawania zadań
 }
+      
+      
+      
+      
